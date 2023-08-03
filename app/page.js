@@ -1,7 +1,15 @@
 import React from 'react'
-import HomeContainer from "./containers/home"
-export default function Home() {
+import Home from "./(user)/home/page"
+import About from "./(user)/about/page"
+import Techs from "./(user)/techs/page"
+
+export default function HomePage() {
   return (
-    <HomeContainer/>
+    <>
+      <Home />
+      <About />
+      <Techs/>
+    </>
+
   )
 }

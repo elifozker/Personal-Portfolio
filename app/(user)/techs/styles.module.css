@@ -1,0 +1,9 @@
+.techs{
+    text-transform: uppercase;
+    font-size: 66px;
+    margin-top: 900px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#techsContainer{
+    margin-top: 900px;
+}
