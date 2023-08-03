@@ -28,7 +28,7 @@ const Techs = () => {
               className="card rounded-3xl w-32 h-16 text-center mb-16 text-[#F9F9F9] transform motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110 transition ease-in-out duration-300"
             >
               <div className="card-body">
-                <h5 id={styles.font} className="card-title mt-1 ">{technology.skill}</h5>
+                <h5 id={styles.font} className="card-title mt-1  text-[#F9F9F9] ">{technology.skill}</h5>
               </div>
             </div>
           ))}
