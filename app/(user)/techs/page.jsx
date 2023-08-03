@@ -1,42 +1,41 @@
-import React from 'react'
-import styles from "./styles.module.css"
-
-
+import React from "react";
+import styles from "./styles.module.css";
 
 const Techs = () => {
-
-  const technologies = [
-    { id: 1, title: 'React.js', link: '/' },
-    { id: 2, title: 'Next.js', link: '/' },
-    { id: 3, title: 'HTML5', link: '/' },
-    { id: 4, title: 'CSS/SCSS', link: '/' },
-    { id: 5, title: 'Tailwind-Bootstrap', link: '/' },
-    { id: 6, title: 'Node.js', link: '/' },
-    { id: 6, title: 'JS(ES6)', link: '/' },
+  const skills = [
+    { skill: "HTML" },
+    { skill: "CSS" },
+    { skill: "JavaScript" },
+    { skill: "Java" },
+    { skill: "React" },
+    { skill: "Next.js" },
+    { skill: "Tailwind CSS" },
+    { skill: "Git" },
+    { skill: "GitHub" },
+    { skill: "Node.js" },
   ];
 
-
   return (
-    <div className='h-screen w-full'>
-      <section className='container mt-5'>
-        <h1 className={styles.techs}>techs that i use</h1>
-        <div id={styles.techsContainer} className="row">
-          {technologies.map((technology) => (
-            <div  className="col-md-4" key={technology.id}>
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title t">{technology.title}</h5>
-                </div>
+    <div className="h-[900px] w-full bg-[#F9F9F9] pt-52">
+      <section className="container mx-auto ">
+        <h1 id={styles.fontSecond} className="sm:text-[20px] md:text-[56px]">
+          TECHS THAT I USE
+        </h1>
+        <div class="grid grid-cols-5 gap-4 mt-36 ml-24">
+          {skills.map((technology) => (
+            <div
+              id={styles.gradient}
+              className="card rounded-3xl w-32 h-16 text-center mb-16 text-[#F9F9F9] transform motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110 transition ease-in-out duration-300"
+            >
+              <div className="card-body">
+                <h5 id={styles.font} className="card-title mt-1 ">{technology.skill}</h5>
               </div>
             </div>
           ))}
         </div>
-
       </section>
-
     </div>
+  );
+};
 
-  )
-}
-
-export default Techs
+export default Techs;

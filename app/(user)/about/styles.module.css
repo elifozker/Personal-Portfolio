@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-.h1 {
+#font {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 56px;
-    letter-spacing: 2px;
-    margin-top:200px;
+
 }

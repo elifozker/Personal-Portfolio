@@ -23,7 +23,7 @@ function Navbar (){
   return (
     <nav className="navbar navbar-expand-lg mt-2 " >
       <div className="container">
-        <a className="navbar-brand" href="/">ElifÖzker</a>
+        <a className="navbar-brand" href="/">Elif Özker</a>
         <button
           className="navbar-toggler"
           type="button"

@@ -1,42 +1,39 @@
-"use client"
-import React from 'react'
+"use client";
+import React from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import styles from "./styles.module.css";
-
 
 function Home() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
   return (
     <>
-      <motion.div style={{
-        scaleX: scrollYProgress,
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        height: 10,
-        background: '#001524',
-        transformOrigin: '0%'
-      }} />
-
-      <div className="h-screen w-full">
-        <div id={styles.home} className="container ">
-          <h1 className={styles.greetings}>welcome!</h1>
-          <h1 className={styles.to}> to</h1>
-          <h1 className={styles.greetingsSecond}>my portfolio <br /></h1>
-          <h1 className={styles.website}> website</h1>
-
+      <section id="home" className="h-auto w-full bg-[#F9F9F9] pb-60">
+        <div className="container mx-auto flex flex-col justify-center items-start">
+          <div className="flex flex-col sm:text-[40px] md:text-[96px] text-[#272829]">
+            <p id={styles.greetings} className="mt-12 mb-4">
+              WELCOME!
+            </p>
+            <p id={styles.to} className="sm:ml-12 md:ml-36 mb-4">
+              TO
+            </p>
+            <p id={styles.myPortfolio} className="mb-4">
+              MY PORTFOLIO
+            </p>
+            <p id={styles.website} className="sm:ml-12 md:ml-36 ">
+              WEBSITE
+            </p>
+          </div>
+          
         </div>
-
-      </div>
-
+      </section>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
+

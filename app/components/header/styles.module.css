@@ -1,18 +1,10 @@
 .btn{
   font-size: 15px;
-  background-color:'#FFFFFF';
   color: #222222 ;
   border-radius: 15px;
-  padding: 5px 13px 5px 13px;
-  margin: 0px 15px 0px 15px;
-  border: 1px solid #222222 ;
-  transition: 0.4s;
  
-}
-.btn:hover{
-  font-size: 17px;
-  letter-spacing: 2px;
-  filter: blur(0.6px);
+  border: 1px solid #222222 ;
 
+ 
 }
 

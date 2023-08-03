@@ -4,6 +4,7 @@ import Footer from "./components/footer/index"
 import global from "./styles/global.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -15,10 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={global.container}>
-        <Header />
+        <Header/>
         <main>
           {children}
         </main>
+        <Footer/>
 
       </body>
     </html>
