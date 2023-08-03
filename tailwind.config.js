@@ -33,7 +33,5 @@ module.exports = {
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus'],
   },
-  plugins: [
-    
-  ],
+  plugins: [require('flowbite/plugin')],
 }
