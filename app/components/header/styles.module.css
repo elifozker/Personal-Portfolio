@@ -1,9 +1,9 @@
-.btn{
+.btn {
   font-size: 15px;
-  color: #222222 ;
+  color: #222222;
   border-radius: 15px;
-  border: 1px solid #222222 ;
-
- 
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  padding: 8px 16px; /* Butonun içeriğine göre uygun bir padding ekleyebilirsiniz */
 }
 

@@ -1,7 +1,8 @@
 "use client"
-import React, { useState } from 'react';
-import  styles from "./styles.module.css"
-function Navbar (){
+import React, { useState } from "react";
+import styles from "./styles.module.css";
+
+function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const handleNavToggle = () => {
@@ -13,29 +14,29 @@ function Navbar (){
   };
 
   const navbarItems = [
-    { id: 1, title: 'Home', link: '/' },
-    { id: 2, title: 'About', link: '/' },
-    { id: 3, title: 'Techs', link: '/' },
-    { id: 4, title: 'My Works', link: '/' },
-    { id: 5, title: 'Contact', link: '/' },
+    { id: 1, title: "Home", link: "/" },
+    { id: 2, title: "About", link: "/" },
+    { id: 3, title: "Techs", link: "/" },
+    { id: 4, title: "My Works", link: "/" },
+    { id: 5, title: "Contact", link: "/" },
   ];
 
   return (
-    <nav className="navbar navbar-expand-lg mt-2 " >
+    <nav className={`navbar ${styles.nav} ${isNavOpen ? styles.navOpen : ""}`}>
       <div className="container">
-        <a className="navbar-brand" href="/">Elif Özker</a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={handleNavToggle}
-        >
+        <a className={`navbar-brand ${styles.navTitle}`} href="/">
+          Elif Özker
+        </a>
+        <button className="navbar-toggler" type="button" onClick={handleNavToggle}>
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`collapse navbar-collapse flex justify-content-center ${isNavOpen ? 'show' : ''} `}>
+        <div className={`collapse navbar-collapse ${styles.navLinks}`}>
           <ul className="navbar-nav ml-auto">
             {navbarItems.map((item) => (
-              <li  key={item.id}>
-                <button  className={styles.btn} onClick={closeNavOnLinkClick}> {item.title}  </button>    
+              <li key={item.id}>
+                <a href={item.link} onClick={closeNavOnLinkClick} className={styles.btn}>
+                  {item.title}
+                </a>
               </li>
             ))}
           </ul>
@@ -43,6 +44,6 @@ function Navbar (){
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
