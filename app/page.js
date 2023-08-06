@@ -8,9 +8,9 @@ export default function HomePage() {
   return (
     <>
       <Home />
-      <About/>
-      <Techs/>
-      <Contact/>
+
+
+
      
     </>
 

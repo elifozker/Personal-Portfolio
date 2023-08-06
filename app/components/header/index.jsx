@@ -1,49 +1,39 @@
-"use client"
-import React, { useState } from "react";
-import styles from "./styles.module.css";
+"use client";
 
-function Navbar() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+import styles from "../../styles/fonts.module.css";
+const navigation = [
+  { name: "Home", href: "#" },
+  { name: "About", href: "#" },
+  { name: "Skills", href: "#" },
+  { name: "Repo", href: "#" },
+  { name: "Contact", href: "#" },
+];
 
-  const handleNavToggle = () => {
-    setIsNavOpen(!isNavOpen);
-  };
-
-  const closeNavOnLinkClick = () => {
-    setIsNavOpen(false);
-  };
-
-  const navbarItems = [
-    { id: 1, title: "Home", link: "/" },
-    { id: 2, title: "About", link: "/" },
-    { id: 3, title: "Techs", link: "/" },
-    { id: 4, title: "My Works", link: "/" },
-    { id: 5, title: "Contact", link: "/" },
-  ];
-
+export default function Header() {
   return (
-    <nav className={`navbar ${styles.nav} ${isNavOpen ? styles.navOpen : ""}`}>
-      <div className="container">
-        <a className={`navbar-brand ${styles.navTitle}`} href="/">
-          Elif Özker
-        </a>
-        <button className="navbar-toggler" type="button" onClick={handleNavToggle}>
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className={`collapse navbar-collapse ${styles.navLinks}`}>
-          <ul className="navbar-nav ml-auto">
-            {navbarItems.map((item) => (
-              <li key={item.id}>
-                <a href={item.link} onClick={closeNavOnLinkClick} className={styles.btn}>
-                  {item.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+    <nav className="fixed top-0 left-0 w-full bg-transparent p-4">
+    <div className="container max-w-7xl mx-auto flex justify-between items-center">
+      <div>
+        <h1
+          className={`text-black md:text-2xl sm:text-base tracking-widest ${styles.outfit}`}
+        >
+          elo
+        </h1>
       </div>
-    </nav>
+      <div className="flex items-center space-x-2 md:space-x-4 md:text-base">
+        {navigation.map((item) => (
+          <a
+            href={item.href}
+            className="text-black text-sm sm:text-base"
+            key={item.name}
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </nav>
+  
+  
   );
 }
-
-export default Navbar;
