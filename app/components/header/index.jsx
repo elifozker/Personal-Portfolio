@@ -2,11 +2,11 @@
 
 import styles from "../../styles/fonts.module.css";
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Skills", href: "#" },
-  { name: "Repo", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Repo", href: "#repo" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function Header() {

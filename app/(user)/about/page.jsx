@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./styles.module.css";
 function About() {
   return (
-    <div className="w-screen h-screen bg-[#F9F9F9]">
+    <div id="about" className="w-screen h-screen bg-[#F9F9F9]">
     <div className="container pt-44">
-      <section className="mx-auto justify-items-center px-4">
+      <section className="mx-auto justify-items-center">
         <p className="sm:text-lg md:text-3xl md:leading-loose">
           <em>Hello</em> I am Elif, <br />a 4th-year Computer Engineering
           student at Dokuz Eylül University.
