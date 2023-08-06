@@ -11,7 +11,7 @@ const navigation = [
 
 export default function Header() {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-transparent p-4">
+    <nav className="fixed top-0 left-0 w-full bg-transparent p-4 z-20">
     <div className="container max-w-7xl mx-auto flex justify-between items-center">
       <div>
         <h1

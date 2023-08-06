@@ -12,6 +12,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
     letterSpacing: {
       tightest: '-.075em',
       tighter: '-.05em',
@@ -43,5 +44,5 @@ module.exports = {
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus'],
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
 }

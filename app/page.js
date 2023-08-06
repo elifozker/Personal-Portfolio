@@ -7,7 +7,7 @@ import Contact from "./(user)/contact/page"
 export default function HomePage() {
   return (
     <>
-      <Home />
+      <Home text="Welcome to my portfolio!" />
       <About/>
       <Skills/>
       <Contact/>
