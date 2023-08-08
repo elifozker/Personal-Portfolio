@@ -23,7 +23,12 @@ module.exports = {
       widest: '.1em',
       widest: '.25em',
     },
-    extend: {},
+    extend: {
+      transitionDuration: {
+        '2000': '2000ms',
+      },
+    },
+
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

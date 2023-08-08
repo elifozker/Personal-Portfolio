@@ -16,21 +16,23 @@ const Skills = () => {
   ];
 
   return (
-    <div className="h-screen w-screen bg-[#C7E8CA] flex justify-center">
-      <section className="container">
-        <h1 className="text-center sm:text-lg md:text-2xl lg:text-5xl  md:mb-24 md:mt-20">
-          SKILLS
-        </h1>
-        <div class="grid sm:grid-cols-2 md:grid-cols-5 gap-4 ">
-          {skills.map((technology, index) => (
-            <div className="sm:p-4 md:p-16 rounded-full sm:mb-4 md:mb-4">
-              <h2 className="text-center" key={index}>
-                {technology.skill}
-              </h2>
+    <div id="skills" className="bg-[#cbf078]">
+      <div className="container mx-auto flex flex-col items-center pt-2 pb-32 rounded-md">
+        <h1 className="text-center text-lg font-semibold mt-10 mb-4">SKILLS</h1>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+          {skills.map((skill, index) => (
+            <div key={index} className="p-4">
+              <div className="flex pointer rounded-full h-40 w-40 bg-[#fcfefe] border-2 border-[#f8fe85] hover:border-[#ffbe0b] p-8 flex-col justify-center items-center hover:shadow-md hover:scale-105 transition-all duration-300">
+                <div className="mb-3">
+                  <h2 className="text-[#233142] text-lg font-medium text-center hover:tracking-wider">
+                    {skill.skill}
+                  </h2>
+                </div>
+              </div>
             </div>
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 };

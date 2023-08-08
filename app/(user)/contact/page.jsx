@@ -36,14 +36,14 @@ export default function Contact() {
     <>
       <div id="contact" className="bg-white dark:bg-gray-900">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2 id={styles.font} className="mb-4 text-4xl  text-center text-gray-900">
+          <h2 className="mb-4 text-4xl  text-center text-gray-900">
             Contact With Me
           </h2>
-          <p id={styles.font} className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+          <p  className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
             Want to send feedback about my website? Or did something come to
             your mind?<br/> Let me know.
           </p>
-          <div id={styles.font}  className="space-y-8">
+          <div  className="space-y-8">
             <form onSubmit={handleSubmit}>
               <div className="sm:col-span-2 mt-2">
                 <label
@@ -92,9 +92,9 @@ export default function Contact() {
                   placeholder="Leave a comment..."
                 />
               </div>
-              <button
+              <button id={styles.gradient}
                 type="submit"
-                className="py-3 px-5 mt-10 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transform motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110 transition ease-in-out duration-300"
+                className="py-3 px-5 mt-10 text-sm font-medium text-center text-black rounded-lg sm:w-fit  focus:ring-4 focus:outline-none dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transform motion-safe:hover:-translate-y-1 motion-safe:hover:scale-110 transition ease-in-out duration-300"
               >
                 Send message
               </button>
