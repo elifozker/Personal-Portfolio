@@ -16,7 +16,7 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="bg-[#cbf078]">
+    <div id="skills" className="bg-[#cbf078] overflow-hidden">
       <div className="container mx-auto flex flex-col items-center pt-2 pb-32 rounded-md">
         <h1 className="text-center text-lg font-semibold mt-10 mb-4">SKILLS</h1>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
