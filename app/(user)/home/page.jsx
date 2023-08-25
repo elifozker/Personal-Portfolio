@@ -14,7 +14,7 @@ function Home() {
         ></img>
         <p className="text-5xl font-medium">WELCOME!</p>
       </div>
-      <Marquee className="absolute sm:text-8xl md:text-7xl top-[-400px] z-0">
+      <Marquee className="absolute sm:text-8xl md:text-7xl top-[-400px] z-0" direction="left">
          elo elo elo elo elo elo elo elo elo elo elo elo elo elo elo elo elo elo elo
         elo elo
       </Marquee>
