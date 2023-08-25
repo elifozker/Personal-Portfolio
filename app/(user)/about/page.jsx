@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div id="about" className="w-auto h-screen bg-[#F9F9F9]">
-      <div className="mx-auto max-w-7xl pt-44 sm:container px-12">
+      <div className="mx-auto max-w-7xl pt-44 sm:container sm:px-12">
         <section className="mx-auto justify-items-center">
           <p className="sm:text-lg md:text-3xl md:leading-loose">
             <em>Hello</em> I am Elif,
