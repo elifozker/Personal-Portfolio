@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 function Home() {
   return (
-    <section id="home" className="w-screen h-screen bg-[#f4a35a] relative">
+    <section id="home" className="w-auto h-screen bg-[#f4a35a] relative">
       <div className="flex flex-col items-center justify-center h-screen ">
         <img
           src="../elifozker.png"
